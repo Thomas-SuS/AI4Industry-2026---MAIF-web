@@ -98,6 +98,7 @@ function displayResults(data) {
         document.getElementById('transcriptText').textContent = `"${data.analysis.transcript}"`;
         document.getElementById('emotionPrimary').textContent = data.analysis.emotions.primary;
         document.getElementById('emotionConfidence').textContent = data.analysis.emotions.confidence + '%';
+        document.getElementById('fileFilename').textContent = data.analysis.metadata.filename;
         document.getElementById('fileDuration').textContent = data.analysis.metadata.duration;
         document.getElementById('fileSampleRate').textContent = data.analysis.metadata.sample_rate;
     }
